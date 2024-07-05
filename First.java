@@ -2,8 +2,9 @@ import java.util.Scanner;
 
 public class First {
     public static void main (String[] args) {
+        //This code is used to swap two values of  a variable
         Scanner inputScanner = new Scanner(System.in);
-        System.out.println("Please, Enter the number you want to swap");
+        System.out.println("Please, Enter the number you want to swap:");
         int num1  = inputScanner.nextInt();
         int num2 = inputScanner.nextInt();
         int num3;
