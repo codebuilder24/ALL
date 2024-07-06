@@ -18,14 +18,15 @@ public class Second {
                 grossPay = 550*hours;
             }
             }else{
-                System.out.println ("It is an over time");
-                if(gender == "male") {
+                System.out.println ("It is an over time.");
+                if(gender.equals("male")) {
                     grossPay = 1.5*500*hours;
                 } else{
                     grossPay = 1.5*550*hours;
                 }
             }
-            System.out.println("Please enter the number of children");
+            //Writing the code for the number of children
+            System.out.println("Please, enter the number of children:");
             int children = inputScanner.nextInt();
             if (children<=3) {
                 payMent = children*10;
