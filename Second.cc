@@ -4,7 +4,7 @@ int main (){
     cout <<"This Code Is Used To Compute For The Net Pay Of Employees In A Particular Company"<<endl;
     double grossPay , netPay , incomeTax, nationalLevy, districtTax, payMent;
     // Starting the Main Code 
-    int hours;
+    int hours, children;
     string gender ;
     cout<<"Please enter the gender of ther person"<<endl;
     cin>>gender;
@@ -27,7 +27,18 @@ int main (){
         }
     }
     //Writing a code for the number of children
-
+    cout<<"Please, enter the number of children"<<endl;
+    cin>>children;
+    if (children<=3) {
+        payMent = children*10;
+    } else {
+        payMent = children*10 +(children-3)*20;
+    }
+    incomeTax = 0.15*grossPay;
+    nationalLevy = 0.025*grossPay;
+    districtTax = 0.01*grossPay;
+    netPay = grossPay -(incomeTax+nationalLevy+districtTax+payMent);
+    cout<<netPay;
 
     return 0;
 }
