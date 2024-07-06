@@ -20,9 +20,9 @@ public class Second {
             }else{
                 System.out.println ("It is an over time.");
                 if(gender.equals("male")) {
-                    grossPay = 1.5*500*hours;
+                    grossPay = (1.5*500*(hours-40)) +(500*40);
                 } else{
-                    grossPay = 1.5*550*hours;
+                    grossPay = (1.5*550*(hours-40)) + (550*40);
                 }
             }
             //Writing the code for the number of children
@@ -31,7 +31,7 @@ public class Second {
             if (children<=3) {
                 payMent = children*10;
             } else {
-                payMent = children*10 +(children-3)*20;
+                payMent = 30 +(children-3)*20;
             }
             incomeTax = 0.15*grossPay;
             nationalLevy = 0.025*grossPay;

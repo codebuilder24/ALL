@@ -21,9 +21,9 @@ int main (){
     } else {
         cout<<"It is an overtime"<<endl;
         if (gender =="male") {
-            grossPay = 1.5*500*hours;
+            grossPay = (1.5*500*(hours-40)) + (hours*40);
         } else {
-            grossPay = 1.5*550*hours;
+            grossPay = (1.5*550*(hours-40)) +(hours*40);
         }
     }
     //Writing a code for the number of children
@@ -32,7 +32,7 @@ int main (){
     if (children<=3) {
         payMent = children*10;
     } else {
-        payMent = children*10 +(children-3)*20;
+        payMent =30 +(children-3)*20;
     }
     incomeTax = 0.15*grossPay;
     nationalLevy = 0.025*grossPay;
