@@ -11,6 +11,14 @@ public class Fourth {
             mainArray[i] = inputScanner.nextInt();
         }
         System.out.println("For you to be sure of your inputs, type 'y' to print the array or otherwise");
+        String option = inputScanner.nextLine();
+        if (option.equals("y")) {
+            for(int i=0; i<num;i++) {
+                System.out.println(mainArray[i]);
+            }
+        }else {
+            System.out.println("Let's move on to the next code");
+        }
 
 
 
