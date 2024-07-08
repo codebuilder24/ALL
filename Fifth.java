@@ -19,14 +19,7 @@ public class Fifth {
         System.out.println(sum);
     }
 
-    public static void even (int x){
-        int count = 0;
-        int sum = 0;
-        while (count<=x) {
-            sum = sum+ 2;
-            sum = 
-            count +=1;
-        }
-        System.out.println(sum);
+    public static void even (){
+
     }
-}
+    }
