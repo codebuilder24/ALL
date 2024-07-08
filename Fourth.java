@@ -3,6 +3,7 @@ public class Fourth {
     public static void main (String[] args){
         //A code that will be used to calculate the mean and median after being given inputs from the user
         double sum = 0;
+        double median;
         Scanner inputScanner  = new Scanner (System.in);
         System.out.println("Please enter the number of Elements you wantto have inside your array");
         int num = inputScanner.nextInt();
@@ -27,8 +28,12 @@ public class Fourth {
        }
        double mean  = sum/num;
        System.out.println("The mean is:"+mean);
-
-
+       if (num%2 == 0) {
+         median = (mainArray[(num/2)-1] +mainArray[((num)/2)])/2;
+       } else {
+        median = mainArray[((num)/2)];
+       }
+       System.out.println("The median is:"+median);
 
 
         inputScanner.close();
