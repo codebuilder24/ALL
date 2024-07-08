@@ -6,7 +6,7 @@ public class Third  {
         System.out.println("Enter The Number Of Elements You Want To Store:");
         int arraySize = inputScanner.nextInt();
         int [] numArray = new int [arraySize] ;
-        System.out.println("Enter" + arraySize+ "numbers ");
+        System.out.println("Enter " + arraySize+ " numbers ");
         for(i = 0;i<arraySize;i ++) {
             numArray[i]= inputScanner.nextInt();
         }
