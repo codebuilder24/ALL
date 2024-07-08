@@ -7,19 +7,34 @@ public class Fifth {
         int num = inputScanner.nextInt();
         System.out.println("The sum of the  first "+num+ " even positive numbes are");
         even(num);
+        System.out.println("The sum of the first "+num+"odd positive numbers are");
+        odd(num);
         inputScanner.close();
     }
     public static void odd (int x){
+        int newArray [] = new int [x];
+        int sum = -1;
         int count = 0;
-        int sum = 1;
-        while (count<=x) {
-            sum +=2;
-            count +=1;   
+        int i = 0;
+        for (; i<x;i++) {
+            sum = sum+2;
+            newArray[i] = sum;
+            count = count + newArray[i];
         }
-        System.out.println(sum);
+        System.out.println(count);
     }
 
-    public static void even (){
+    public static void even (int x){
+        int newArray[] = new int [x];
+        int sum = 0;
+        int count = 0;
+        int i = 0;
+        for (; i<x;i++){
+            sum = sum +2;
+            newArray[i] = sum;
+            count = count +newArray[i];
+        }
+        System.out.println(count);
 
     }
     }
