@@ -13,7 +13,7 @@ public class Fifth {
     }
     public static void odd (int x){
         int newArray [] = new int [x];
-        int sum = -1;
+        int sum = 1;
         int count = 0;
         int i = 0;
         for (; i<x;i++) {
