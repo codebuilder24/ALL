@@ -18,7 +18,7 @@ public class Sixth {
                 count = count+1;
                 integer = sum;
             }
-            System.out.println("The number of count is "+count+"for integer "+i+"The last mumber is :" +(integer));
+            System.out.println("The number of count is "+count+" for integer:"+i+"\nThe last mumber is :" +(integer));
             integer = useNum;
             count = 0;
             i++;
