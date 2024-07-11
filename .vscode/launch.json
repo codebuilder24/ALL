@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Seventh",
+      "request": "launch",
+      "mainClass": "Seventh",
+      "projectName": "ALL PROCEDURAL _7d9a0216"
+    },
+    {
+      "type": "java",
       "name": "Sixth",
       "request": "launch",
       "mainClass": "Sixth",
