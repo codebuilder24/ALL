@@ -7,33 +7,32 @@ public class Factorial {
         Scanner inputScanner = new Scanner(System.in);
         System.out.println("Please enter the factorial whose number you want to find:");
         int number = inputScanner.nextInt();
-        while (number>=0) { {
+         {
             for (i = 0;i<=number;i++) {
-                 real = number - 1;
+                 real = number - i;
                 
-                 if (number ==sub(real)) {
+                 if (number ==calculateFactorial(real)) {
                 System.out.println(real);
+
                  }
+
+
             
             }
         }
             
-        }
+        
 
 
 
         inputScanner.close();
     }
 
-    public static int sub (int real ) {
-        //Crafting a code that solves for the factorial of a number
-        int y;
-        int factorial;
-        for (y=0;y<=real;y++) {
-             factorial  = (real-y);
-
+    public static int calculateFactorial(int n) {
+        int factorial = 1;
+        for (int i = 1; i <= n; i++) {
+            factorial *= i;
         }
-        return (factorial);
+        return factorial;
     }
-    
 }
