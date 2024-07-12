@@ -12,19 +12,11 @@ public class Factorial {
                  real = number - i;
                 
                  if (number ==calculateFactorial(real)) {
-                System.out.println(real);
+                System.out.println("The number whose factorial is "+ number+" is "+real);
 
-                 }
-
-
-            
+                 }          
             }
         }
-            
-        
-
-
-
         inputScanner.close();
     }
 
