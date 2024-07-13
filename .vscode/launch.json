@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Remainder",
+      "request": "launch",
+      "mainClass": "Remainder",
+      "projectName": "ALL PROCEDURAL _7d9a0216"
+    },
+    {
+      "type": "java",
       "name": "TwinPrime",
       "request": "launch",
       "mainClass": "TwinPrime",
