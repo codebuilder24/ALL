@@ -1,0 +1,1 @@
+//Practicing all the most important loops in Javascript 
