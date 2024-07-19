@@ -20,3 +20,21 @@ function mineDoWhile() {
 }
 //The for in loop is used for non array objects 
 //The for of loop is used for array objects
+
+
+// Creating an object
+let objectName =  {
+    nameOfPerson: 'Kofi',
+    age : 18,
+}
+console.log(objectName.nameOfPerson)
+console.log(objectName.age)
+objectName['nameOfPerson'] = "Ama";
+objectName['New'] = 'A car';
+console.log(objectName);
+
+//Practicing a list 
+let listName = ['Kofi', 'Ama','Juliet'];
+listName[2] = "Ama";
+console.log(typeof listName)
+console.log(listName)
