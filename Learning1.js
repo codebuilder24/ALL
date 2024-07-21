@@ -36,5 +36,25 @@ console.log(objectName);
 //Practicing a list 
 let listName = ['Kofi', 'Ama','Juliet'];
 listName[2] = "Ama";
-console.log(typeof listName)
-console.log(listName)
+console.log(typeof listName);
+console.log(listName);
+
+
+
+//Practicing another form of objects 
+let school = {
+    gender : 'female',
+    getFunction : function(){
+        return (`The gender of the person is ${school.gender}`)
+    }
+}
+let school1 = Object.create(school);
+school1.age = 30;
+school1.name = 'KNUST';
+school1.number  = 2355844;
+//delete school1.number;// Deleting this property
+
+for (let key in school1) {
+    console.log(key)
+}
+console.log(school1.getFunction())
