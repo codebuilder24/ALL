@@ -96,7 +96,7 @@ person1.getDetails();
 {
 
 // Abstraction example, 
-//By defining the variables in a special way, we add abstractions to them . In this case , only some of the messages can be accessed
+//By defining the variables in a special way, we add abstractions to them . In this case , only some of the messages can be accessedssss
 function person(fname, lname) {
 	let firstname = fname;
 	let lastname = lname;
@@ -116,3 +116,31 @@ console.log(person1.firstname);
 console.log(person1.getDetails_noaccess);
 console.log(person1.getDetails_access());
 }
+
+ {
+    // Inheritance example
+class person {
+	constructor(name) {
+		this.name = name;
+	}
+	// method to return the string
+	toString() {
+		return (`Name of person: ${this.name}`);
+	}
+}
+class student extends person {
+	constructor(name, id) {
+		// super keyword for calling the above 
+		// class constructor
+		super(name);
+		this.id = id;
+	}
+	toString() {
+		return (`${super.toString()},
+		Student ID: ${this.id}`);
+	}
+}
+let student1 = new student('Mukul', 22);
+console.log(student1.toString());
+
+ }
