@@ -1,0 +1,8 @@
+function myFunction () {
+    let objectName = {
+        "name" : "Kofi",
+        "age":12,
+    }
+    console.log(name)
+
+}
