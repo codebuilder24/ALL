@@ -152,3 +152,7 @@
     }
     console.log(objectName.name)
  }
+
+ fetch("Learning1.json") 
+ .then(response => response.json())
+ .then(values => console.log(values))
