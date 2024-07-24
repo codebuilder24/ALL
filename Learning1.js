@@ -144,6 +144,7 @@ let student1 = new student('Mukul', 22);
 console.log(student1.toString());
 
  }
+ 
  {
     let objectName = {
         "name" : "Kofi",
